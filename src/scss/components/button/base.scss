@@ -1,0 +1,28 @@
+@mixin button-base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 12px 0;
+
+    border: 2px solid transparent;
+    outline: none;
+
+    color: $content-primary;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    @include focus {
+        border-color: blue;
+    }
+
+    &:disabled {
+        cursor: unset;
+    }
+}

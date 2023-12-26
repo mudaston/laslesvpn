@@ -1,0 +1,92 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    /* .header__container */
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        height: 136px;
+        margin: 0 auto;
+    }
+
+    /* .header__logo */
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        width: 100%;
+        max-width: 270px;
+    }
+
+    /* .header__logo-image */
+
+    &__logo-image {
+    }
+
+    /* .header__logo-company */
+
+    &__logo-company {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* .header__logo-bold */
+
+    &__logo-bold {
+        font-weight: 700;
+    }
+
+    /* .header__nav */
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    /* .header__nav-links */
+
+    &__nav-links {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .header__nav-item */
+
+    &__nav-item {
+    }
+
+    /* .header__nav-link */
+
+    &__nav-link {
+        padding: 10px;
+
+        color: $content-secondary;
+        text-decoration: none;
+    }
+
+    /* .header__auth */
+
+    &__auth {
+        display: flex;
+
+        width: 100%;
+        max-width: 270px;
+        min-width: 200px;
+
+        .button-tertiary {
+            padding: 0;
+        }
+    }
+}

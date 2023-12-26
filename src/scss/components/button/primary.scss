@@ -1,0 +1,19 @@
+@mixin button-primary {
+    @include button-base;
+
+    padding-top: 16px;
+    border-radius: 10px;
+
+    background-color: $primary;
+
+    color: $white;
+    font-weight: 700;
+
+    @include hover {
+        color: $white;
+    }
+}
+
+.button-primary {
+    @include button-primary;
+}

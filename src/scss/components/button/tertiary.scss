@@ -1,0 +1,9 @@
+@mixin button-tertiary {
+    @include button-base;
+
+    font-weight: 500;
+}
+
+.button-tertiary {
+    @include button-tertiary;
+}

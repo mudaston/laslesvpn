@@ -1,0 +1,18 @@
+@mixin button-secondary {
+    @include button-base;
+
+    border-color: $primary;
+    border-radius: 999px;
+
+    color: $primary;
+    font-weight: 500;
+
+    @include hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.button-secondary {
+    @include button-secondary;
+}
