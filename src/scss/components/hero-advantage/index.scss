@@ -1,0 +1,42 @@
+.hero-advantage {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    /* .hero-advantage__img */
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        background: $secondary;
+        border-radius: 999px;
+    }
+
+    /* .hero-advantage__description */
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* .hero-advantage__count */
+
+    &__count {
+        color: $content-primary;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    /* .hero-advantage__subcounter */
+
+    &__subcounter {
+        color: $content-secondary;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

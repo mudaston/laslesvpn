@@ -8,6 +8,8 @@
     &__header {
         display: flex;
         gap: 40px;
+
+        margin: 0 auto;
     }
 
     /* .hero__introduction */
@@ -15,11 +17,19 @@
     &__introduction {
         max-width: 556px;
         min-width: 556px;
+
+        @include mobile {
+            width: 100%;
+            max-width: auto;
+            min-width: auto;
+        }
     }
 
     /* .hero__introduction-title */
 
     &__introduction-title {
+        padding-right: 20px;
+
         color: $content-primary;
         font-size: 50px;
         font-weight: 500;
@@ -34,6 +44,7 @@
 
     &__introduction-subtitle {
         margin-top: 20px;
+        padding-right: 20px;
 
         color: $content-secondary;
         line-height: 30px;
@@ -70,12 +81,46 @@
 
     /* .hero__image */
 
-    &__image {
+    :first-child &__image {
         margin-top: -26px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     /* .hero__footer */
 
     &__footer {
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 38px 0;
+
+        /* .hero__footer-wrapper */
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            height: 125px;
+        }
+
+        /* .hero__footer-divider */
+
+        &-divider {
+            height: 100%;
+            width: 1px;
+            min-width: 1px;
+
+            background-color: #eeeff2;
+        }
+
+        /* .hero__footer-space-filler */
+
+        &-space-filler {
+            flex-grow: 1;
+        }
     }
 }

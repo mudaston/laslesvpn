@@ -1,11 +1,31 @@
 @mixin hover {
-    &:hover:not(:disabled) {
-        @content;
+    @media (hover: hover) {
+        &:hover:not(:disabled) {
+            @content;
+        }
     }
 }
 
 @mixin focus {
     &:focus:not(:disabled) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 576px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 992px) {
         @content;
     }
 }
